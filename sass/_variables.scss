@@ -1,0 +1,124 @@
+$blue: #0d1b48;
+$red: #c33c54;
+$wht: #fff;
+$info: #f5f9fe;
+
+.bg-red {
+    background-color: #c33c54;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+.bg-blue {
+    background-color: $blue;
+    color: white;
+    padding: 4px;
+    border-radius: 25px;
+    font-size: 12px;
+    width: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+.btn {
+    padding: 10px;
+}
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.j-center {
+    display: flex;
+    justify-content: center;
+}
+.mt-5 {
+    margin-top: 25px;
+}
+.border-b {
+    border-bottom: 1px solid;
+    color: white;
+}
+.text-bl {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+}
+.ml-0  {
+    margin-left: 0;
+}
+.p-5 {
+    padding: 5px;
+}
+.w-100 {
+    width: 100%;
+}
+.m-0 {
+    margin: 0;
+}
+.mt-2 {
+    margin-top: 20px;
+}
+.mr-2 {
+    margin-right: 10px;
+}
+.mr-4 {
+    margin-right: 40px;
+}
+.f-column {
+    display: flex;
+    flex-direction: column;
+}
+.d-block {
+    display: block;
+}
+.j-beetwen {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.j-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.text-gold {
+    color: gold;
+    font-size: 20px;
+}
+.text-blue {
+    color: $blue;
+}
+.text-gray {
+    color: gainsboro;
+    font-size: 20px;
+}
+.text-red {
+    color: $red;
+    margin-right: 8px;
+}
+.mt-1 {
+    margin-top: 7px;
+}
+.mb-1 {
+    margin-bottom: 20px;
+}
+.mt-3 {
+    margin-top: 10px;
+}
+.lh {
+    line-height: 1.7;
+}
+.text-center {
+    text-align: center;
+}
+.mt-6 {
+    margin-top: 80px;
+}
+.w-50 {
+    width: 50%;
+}

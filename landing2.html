@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/landing2.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#">
+          <i class="fas fa-bars header-burger"></i>
+        </a>
+        <nav class="header__inner">
+          <ul class="header__list">
+            <a href="index.html">
+              <img
+                class="footer__logo"
+                src="https://demo.themesberg.com/bootstrap/spaces/assets/img/brand/dark.svg"
+                alt=""
+              />
+            </a>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">
+                Front Pages <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="header__menu">
+                <div>
+                  <h3 class="header__menu-title">Main Pages</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Landing </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="landing2.html">
+                      Landing 2
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Landing 3 </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> About </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Pricing </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Team </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Contact </a>
+                  </li>
+                  <h3 class="header__menu-title">Legal</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Legal center </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">
+                      Teerms & agreement
+                    </a>
+                  </li>
+                </div>
+                <div>
+                  <h3 class="header__menu-title">Listing</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> All spaces </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Map view </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#">
+                      All spaces sidebar
+                    </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Space details </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Profile </a>
+                  </li>
+                  <h3 class="header__menu-title">Support</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Support center </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Support topic </a>
+                  </li>
+                  <h3 class="header__menu-title">Blog</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Blog </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Blog post </a>
+                  </li>
+                </div>
+                <div>
+                  <h3 class="header__menu-title">User</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Sign in </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Sign up </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Forgot password </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Reset password </a>
+                  </li>
+                  <h3 class="header__menu-title">Special</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> 404 Not Found </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> 505 Server Error </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Maintenance </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Coming soon </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Blank page </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">
+                Dashboard <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="header__menu">
+                <div>
+                  <h3 class="header__menu-title">User dashboard</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> My account </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Settigs </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Security </a>
+                  </li>
+                  <h3 class="header__menu-title">Items</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> My item </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Edit item </a>
+                  </li>
+                </div>
+                <div>
+                  <h3 class="header__menu-title">Messaging</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Messages </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Chat </a>
+                  </li>
+                  <h3 class="header__menu-title">Billing</h3>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Billing details </a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a class="header__menu-link" href="#"> Invoice </a>
+                  </li>
+                </div>
+              </ul>
+            </li>
+            <li class="header__list-item">
+              <a class="header__list-link" href="#">
+                Support <i class="fas fa-chevron-down"></i>
+              </a>
+              <ul class="header__menu">
+                <div>
+                  <li class="header__menu-item">
+                    <i class="fas fa-file"></i>
+                    <div>
+                      <h3 class="header__menu-title">Documentation</h3>
+                      <p class="header__menu-title">Examples and guides</p>
+                    </div>
+                    <p class="bg-red">v3.0</p>
+                  </li>
+                  <li class="header__menu-item">
+                    <i class="fas fa-microphone"></i>
+                    <div>
+                      <h3 class="header__menu-title">Support</h3>
+                      <p class="header__menu-title">Looking for answers?</p>
+                    </div>
+                    <p class="bg-red">v3.0</p>
+                  </li>
+                </div>
+              </ul>
+            </li>
+          </ul>
+          <div class="header__inner-btn">
+            <button class="default__btn btn">
+              <i class="fas fa-book"></i> Components
+            </button>
+            <button class="default__btn default__btn--red btn">
+              <i class="fas fa-shopping-bag"></i> Buy now
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section class="home">
+      <div class="container">
+        <div class="home__inner">
+          <div class="home__block">
+            <h1 class="home__title">Flexible Office. Fast.</h1>
+            <p class="home__text">
+              12,000+ coworking spaces with offices & meeting rooms in 165+
+              countries.Discover and reserve space today.
+            </p>
+            <form class="home__form f-column">
+              <div class="home__inner-inp">
+                <button class="home__form-btn">
+                  <i class="fas fa-map-marker-alt"></i>
+                </button>
+                <input
+                  type="text"
+                  class="home__form-inp"
+                  placeholder="Search location"
+                />
+              </div>
+              <div class="d-flex mt-5">
+                <div class="home__inner-inp">
+                  <button class="home__form-btn">
+                    <i class="fas fa-sliders-h"></i>
+                  </button>
+                  <select class="w-50" name="home-select" id="home__select">
+                    <option value="Type">Type</option>
+                    <option value="Metting">On-Demand Meeting Spaces</option>
+                    <option value="Office">Office Space</option>
+                  </select>
+                </div>
+                <div class="home__inner-inp">
+                  <button class="home__form-btn">
+                    <i class="far fa-user-circle"></i>
+                  </button>
+                  <select name="w-50 home-select" id="home__select">
+                    <option value="Size">Team Size</option>
+                    <option value="Any">Any</option>
+                    <option value="1-20">1-20</option>
+                    <option value="1-20">21-50</option>
+                    <option value="1-20">51-100</option>
+                  </select>
+                </div>
+              </div>
+              <div>
+                <button class="home__form-button default__btn--blue btn mt-5">
+                  Find a Desk
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="home__block--lg">
+            <img class="home__img" src="img/hero.svg" alt="" />
+          </div>
+        </div>
+        <div class="home__slider">
+                <div class="about__cards-card home__slider-item">
+                    <img class="about__cards-card-img" src="img/image-office.jpg" alt="">
+                    <h2 class="about__card-card-title">Collaborative Workspace</h2>
+                    <div class="d-flex">
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold mr-2"></i>
+                       <span class="bg-blue">5.0</span>
+                    </div>
+                    <div class="f-column lh mt-1">
+                        <div class="d-flex">
+                            <i class="fas fa-map-marker mr-2"></i>
+                          <span>New York, Manhattan, USA</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Old Street (2 mins walk)</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Shoreditch High Street (10 mins walk)</span>  
+                        </div>
+                    </div>
+                    <div class="about__card-footer">
+                        <div class="j-around">
+                            <div class="f-column">
+                                <span class="mt-2">Monthly</span>
+                                <h2 class="mt-1">2100$</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">People</span>
+                                <h2 class="mt-1">12</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">Sq.Ft</span>
+                                <h2 class="mt-1">1200</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__cards-card home__slider-item">
+                    <img class="about__cards-card-img" src="img/conference-office.jpg" alt="">
+                    <h2 class="about__card-card-title">Conference Room</h2>
+                    <div class="d-flex">
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gray mr-2"></i>
+                       <span class="bg-blue">4.7</span>
+                    </div>
+                    <div class="f-column lh mt-1">
+                        <div class="d-flex">
+                            <i class="fas fa-map-marker mr-2"></i>
+                          <span>Paris, Île-de-France, France</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>LE BHV MARAIS (5 mins walk)</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Museum Street (20 mins walk)</span>  
+                        </div>
+                    </div>
+                    <div class="about__card-footer">
+                        <div class="j-around">
+                            <div class="f-column">
+                                <span class="mt-2">Monthly</span>
+                                <h2 class="mt-1">150$</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">People</span>
+                                <h2 class="mt-1">2-10</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">Sq.Ft</span>
+                                <h2 class="mt-1">200</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__cards-card home__slider-item">
+                    <img class="about__cards-card-img" src="img/lifestyle-office.jpg" alt="">
+                    <h2 class="about__card-card-title">Lifestyle Space</h2>
+                    <div class="d-flex">
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gray mr-2"></i>
+                       <span class="bg-blue">4.7</span>
+                    </div>
+                    <div class="f-column lh mt-1">
+                        <div class="d-flex">
+                            <i class="fas fa-map-marker mr-2"></i>
+                          <span>Madrid, Hortaleza, Spain</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Plaza Mayor (2 mins walk)</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>eal Casa de Correos (15 mins walk)</span>  
+                        </div>
+                    </div>
+                    <div class="about__card-footer">
+                        <div class="j-around">
+                            <div class="f-column">
+                                <span class="mt-2">Monthly</span>
+                                <h2 class="mt-1">200$</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">People</span>
+                                <h2 class="mt-1">10-30</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">Sq.Ft</span>
+                                <h2 class="mt-1">500</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__cards-card home__slider-item">
+                    <img class="about__cards-card-img" src="img/meeting-office.jpg" alt="">
+                    <h2 class="about__card-card-title">Private Space</h2>
+                    <div class="d-flex">
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold"></i>
+                        <i class="fas fa-star text-gold mr-2"></i>
+                       <span class="bg-blue">5.0</span>
+                    </div>
+                    <div class="f-column lh mt-1">
+                        <div class="d-flex">
+                            <i class="fas fa-map-marker mr-2"></i>
+                          <span>New York, Manhattan, USA</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Old Street (2 mins walk)</span>  
+                        </div>
+                        <div class="d-flex">
+                            <i class="fas fa-bullseye mr-2"></i>
+                          <span>Shoreditch High Street (10 mins walk)</span>  
+                        </div>
+                    </div>
+                    <div class="about__card-footer">
+                        <div class="j-around">
+                            <div class="f-column">
+                                <span class="mt-2">Monthly</span>
+                                <h2 class="mt-1">100$</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">People</span>
+                                <h2 class="mt-1">1</h2>
+                            </div>
+                            <div class="f-column">
+                                <span class="mt-2">Sq.Ft</span>
+                                <h2 class="mt-1">10</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+         </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__gallery">
+          <h2 class="about__gallery-title">Top Coworking Cities</h2>
+          <div class="about__gallery-inner-card">
+            <a href="#">
+              <div class="about__gallery-card about__gallery-card--lg">
+                <h2 class="about__gallery-card-title">UNITED STATES</h2>
+              </div>
+            </a>
+            <div class="f-column">
+              <a href="#">
+                <div class="about__gallery-card about__gallery-card--sm about__gallery-card--paris">
+                  <h2 class="about__gallery-card-title">PARIS</h2>
+                </div>
+              </a>
+              <a href="#">
+                <div class="about__gallery-card about__gallery-card--sm about__gallery-card--paris">
+                  <h2 class="about__gallery-card-title">ITALY</h2>
+                </div>
+              </a>
+            </div>
+            <a href="#">
+              <div class="about__gallery-card about__gallery-card--xsm about__gallery-card--tokyo">
+                <h2 class="about__gallery-card-title">JAPAN</h2>
+              </div>
+            </a>
+            <a href="#">
+              <div class="about__gallery-card about__gallery-card--md about__gallery-card--london">
+                <h2 class="about__gallery-card-title">
+                  UK
+                </h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
