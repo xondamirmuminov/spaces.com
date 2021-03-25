@@ -19,12 +19,20 @@ $info: #f5f9fe;
     text-align: center;
     font-weight: 600;
 }
+.f-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .btn {
     padding: 10px;
 }
 .d-flex {
     display: flex;
     align-items: center;
+}
+.j-evenly {
+    display: flex;
+    justify-content: space-evenly;
 }
 .row {
     display: flex;
@@ -90,6 +98,9 @@ $info: #f5f9fe;
     color: gold;
     font-size: 20px;
 }
+.mb-2 {
+    margin-bottom: 40px;
+}
 .text-blue {
     color: $blue;
 }
@@ -97,9 +108,20 @@ $info: #f5f9fe;
     color: gainsboro;
     font-size: 20px;
 }
+.text-dark {
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
 .text-red {
     color: $red;
     margin-right: 8px;
+}
+.text-green {
+    color: #3aaf85;
+}
+.text-aqua {
+    color: #1da1f2;
 }
 .mt-1 {
     margin-top: 7px;
@@ -121,4 +143,16 @@ $info: #f5f9fe;
 }
 .w-50 {
     width: 50%;
+}
+.m-auto {
+    margin: auto;
+}
+.mr-3 {
+    margin-right: 16px;
+}
+.text--md {
+    font-size: 18px;
+}
+.border-r {
+    border-right: 1px solid black;
 }

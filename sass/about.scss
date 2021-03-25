@@ -1,0 +1,438 @@
+@import '_variables.scss';
+@import '_responsiva.scss';
+@import '_loop.scss';
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-burger {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+}
+.header__list-item {
+    margin-right: 40px;
+    display: flex;
+}
+.header__list-link {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.header__list-item:hover .header__menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+}
+.header__menu {
+    display: none;
+    align-items: center;
+}
+.header__menu-title {
+    margin-right: 30px;
+}
+.header__menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.header__menu-link {
+    color: gray;
+}
+.header__menu-link:hover {
+    color: $red;
+}
+.default__btn {
+    border-radius: 6px;
+    border: 2px solid white;
+    background-color: $blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.default__btn--red {
+  background-color: $red;
+  color: white;
+  border: 0;
+  padding: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.default__btn--blue {
+    background-color: $blue;
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.default__btn--blue:hover {
+    background-color: black;
+}
+.default__btn--black {
+    color: $blue;
+    border: 1px solid $blue;
+    background-color: white;
+    margin-right: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.default__btn:hover {
+    background-color: white;
+    color: $blue;
+    border: 1px solid $blue;
+}
+.default__btn--red:hover {
+    background-color: $red;
+    color: white;
+    opacity: 0.9;
+}
+.default__btn--black:hover {
+    color: $wht;
+    border: 1px solid $wht;
+    background-color: $blue;
+}   
+.footer__logo {
+    max-width: 150px;
+    width: 100%;
+    margin-right: 40px;
+}
+.home {
+    background-image: linear-gradient(#0d1b48d0, #0d1b48d0), url(../img/team-hero.jpg);
+    background-position: center;
+    padding-top: 100px;
+    color: white;
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 35px;
+}
+.home__title {
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.home__text {
+    max-width: 700px;
+    text-align: center;
+    line-height: 2;
+    font-size: 20px;
+    color: rgb(197, 195, 195);
+}
+.home__inner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.home__main {
+    margin-top: 40px;
+    color: black;
+}
+.home__main-inner-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+.home__main-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: $blue;
+    margin-left: 80px;
+}
+.home__main-card-icon {
+    font-size: 40px;
+}
+.home__main-card-title {
+    margin-bottom: 5px;
+}
+.home__main-card-text {
+    margin-top: 5px;
+}
+
+.fill-white {
+    fill: white;
+    margin-top: 150px;
+}
+.about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    color: $blue;
+    margin-top: 100px;
+}
+.about__title {
+    font-size: 50px;
+}
+.about__text {
+    line-height: 1.7;
+    font-size: 20px;
+}
+.about__card--text {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 40px;
+}
+.about__img {
+    width: 100%;
+    max-width: 150px;
+}
+.about__inner-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 0;
+    color: $blue;
+    margin-top: 40px;
+}
+.about__card {
+    display: flex;
+    flex-direction: column;
+    color: $blue;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    width: 100%;
+    max-width: 250px;
+    background-clip: border-box;
+    border: 0.1px solid rgb(184, 183, 183);
+    background-color: #f5f9fe;
+}
+.about__card-title {
+    font-size: 28px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+.about__card-icon {
+    font-size: 35px;
+}
+.about__card-text {
+    margin-top: 2px;
+    font-size: 17px;
+}
+.about__main {
+    margin-top: 80px;
+    color: $blue;
+}
+.about__main-card {
+    width: 100%;
+    color: black;
+    max-width: 350px;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+.about__main-title {
+    font-size: 35px;
+    text-align: center;
+}
+.about__main-text {
+    font-size: 20px;
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.7;
+}
+.about__main-inner-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.about__card-body {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.about__card-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.contact__inner {
+    margin-top: 60px;
+}
+.contact__accordion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 60px;
+}
+.contact__accordion-inner-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    border: 2px solid gainsboro;
+    border-radius: 6px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.contact__accordion-card {
+    width: 900px;
+    border-bottom: 1px solid gainsboro;
+}
+.contact__accordion-card:hover {
+    background-color: $info;
+}
+.contact__accordion-card:hover .contact__accordion-card-body {
+    display: block;
+}
+.contact__accordion-card-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact__accordion-card-title {
+    color: black;
+}
+.contact__accordion-title {
+    text-align: center;
+    font-size: 40px;
+}
+.contact__accordion-card-body {
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact__accordion-text {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+.footer {
+    background-color: $blue;
+    color: white;
+    padding-bottom: 80px;
+    padding-top: 46px;
+}
+.footer__logo {
+    max-width: 150px;
+    width: 100%;
+    margin-right: 40px;
+}
+.footer__btn {
+    display: flex;
+    background-color: white;
+    border-radius: 6px;
+    border: 0;
+    color: $blue;
+    margin-bottom: 15px;
+    width: 300px;
+    margin-right: 15px;
+}
+.footer__btn:hover {
+    opacity: 0.8;
+}
+.footer__btn-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $blue;
+    font-family: 'Poppins', sans-serif;
+}
+.footer__btn-icon {
+    font-size: 40px;
+    margin-right: 10px;
+}
+.footer__btn-text--lg {
+    font-size: 16px;
+    white-space: nowrap;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    line-height: 2;
+}
+.footer__text {
+    max-width: 280px;
+    line-height: 2;
+}
+.footer__list-item {
+    color: white;
+}
+.footer__list-item:hover {
+    color: $red;
+}
+.footer__footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.footer__inner-btn {
+    display: flex;
+}
+.home__logo--sm {
+    max-width: 30px;
+    margin-top: 80px;
+}
+.home__link {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+}
