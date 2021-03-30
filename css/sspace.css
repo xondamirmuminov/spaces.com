@@ -405,6 +405,7 @@
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
 body {
@@ -584,37 +585,18 @@ a {
   background-repeat: no-repeat;
 }
 
-.home-3 {
-  background-image: none;
-  background-position: center;
-  color: white;
-  padding-top: 0;
-}
-
-.home__img--lg {
-  width: 100%;
-  height: 20000px;
-  display: inline-block;
-}
-
-.home-2 {
-  background-image: linear-gradient(#0d1b48d0, #0d1b48d0), url(../img/new-york-hero.jpg);
-}
-
 .home__title {
-  font-size: 50px;
+  font-size: 45px;
   margin-bottom: 0;
-  margin-top: 0;
-}
-
-.home2__title {
-  font-size: 50px;
-  padding-bottom: 140px;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .home__link {
-  font-size: 25px;
+  font-size: 18px;
+  margin-right: 20px;
+  color: white;
+  margin-top: 10px;
 }
 
 .home__text {
@@ -629,75 +611,130 @@ a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 80vh;
+  height: 60vh;
   justify-content: center;
   align-items: center;
 }
 
-.home__main {
-  color: black;
-  background-color: white;
-}
-
-.home__main-inner-card-2 {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.home__main-card {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  color: #0d1b48;
-  margin-left: 80px;
-  margin-top: 40px;
-}
-
-.home__main-card-icon {
-  font-size: 40px;
-}
-
-.home__main-card-title {
-  margin-bottom: 5px;
-}
-
-.home__main-card-text {
-  margin-top: 5px;
-}
-
-.home__main-img {
-  transform: translate(0px, -140px);
-  width: 100%;
-}
-
 .about {
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .about__inner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-.about__title {
-  font-size: 40px;
-  color: #0d1b48;
-  margin-bottom: 0;
-}
-
-.about__text {
-  font-size: 20px;
-  margin-top: 5px;
-}
-
-.about__form {
-  margin-top: 10px;
-  color: #0d1b48;
-  padding-bottom: 40px;
+.about__block--lg {
   width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+.about__block {
+  width: 100%;
+  max-width: 350px;
+}
+
+.about__link {
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+
+.about__gallery {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about__gallery-img {
+  width: 100%;
+  border-radius: 6px;
+  max-width: 220px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.about__block-text {
+  margin-top: 24px;
+  line-height: 1.7;
+  color: #0d1b48;
+}
+
+.about__block-inner-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.about__block-card {
+  width: 100%;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  text-align: center;
+  max-width: 180px;
+  color: #0d1b48;
+}
+
+.about__block-card-icon {
+  color: #c33c54;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.about__block-header {
+  background-color: #f5fef9;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  color: #0d1b48;
+  border: 1px solid gainsboro;
+  margin-bottom: 20px;
+}
+
+.about__block-header-title--sm {
+  font-size: 14px;
+}
+
+.about__block-inner-btn {
+  border: 1px solid gainsboro;
+  padding: 24px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.about__block-btn {
+  width: 100%;
+  margin-left: 0;
+}
+
+.about__bock-user {
+  border: 1px solid gainsboro;
+  border-radius: 6px;
+  padding: 22px;
+  color: #0d1b48;
+}
+
+.about__block-user-img {
+  width: 100%;
+  max-width: 60px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.about__block-form {
+  width: 100%;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  margin-top: 24px;
+  border-radius: 6px;
 }
 
 .about__form-inp {
@@ -707,6 +744,7 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 17px;
   width: 90%;
+  margin-bottom: 18px;
 }
 
 .about__form-label {
@@ -731,6 +769,7 @@ a {
   border: 1px solid gainsboro;
   color: #0d1b48;
   background-color: white;
+  margin-bottom: 18px;
 }
 
 .about__form-btn {
@@ -739,111 +778,14 @@ a {
   margin-top: 10px;
 }
 
-.about__inner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding-bottom: 100px;
-}
-
-.about__card {
-  width: 100%;
-  color: black;
-  max-width: 350px;
-  border-radius: 6px;
-  margin-right: 40px;
-  margin-top: 40px;
-}
-
-.about__card-body {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.about__card-img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 6px;
-}
-
-.home__img--sm {
-  position: absolute;
-  right: 0;
-  top: -20px;
-}
-
-.contact__form {
-  transform: translate(0px, -120px);
-  background-color: white;
-  padding: 30px;
-  border-radius: 6px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid gainsboro;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
+.contact {
+  background-color: #f5fef9;
+  padding-top: 40px;
   padding-bottom: 40px;
 }
 
-.contact__form-inner-inp {
-  display: flex;
-}
-
-.contact__form-inp {
-  padding: 10px;
-  border-radius: 0 6px 6px 0;
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  font-size: 19px;
-  border: 2px solid gainsboro;
-  min-width: 520px;
-  color: #4e5079;
-  margin-right: 40px;
-}
-
-.contact__form-inp--sm {
-  min-width: 250px;
-  margin-right: 0;
-}
-
-.contact__link {
-  margin-top: 10px;
-  color: black;
-  font-size: 18px;
-  margin-top: 30px;
-}
-
-.contact__form-inp-btn {
-  padding: 12px;
-  font-size: 22px;
-  margin: 0;
-  background-color: white;
-  border: 2px solid gainsboro;
-  border-right: 0;
-  color: #4e5079;
-  border-radius: 6px 0 0 6px;
-}
-
-.contact__form-btn {
-  min-width: 280px;
-  padding: 10px;
-  margin-top: 30px;
-  margin-right: 20px;
-}
-
-.contact__form-btn--sm {
-  margin-left: 20px;
-  min-width: 120px;
-}
-
-.home__link {
-  margin-top: 10px;
-  color: white;
-  font-size: 16px;
+.contact__inner {
+  background-color: #f5f9fe;
 }
 
 .contact__inner-card {
@@ -851,7 +793,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 200px;
+  background-color: #f5f9fe;
 }
 
 .contact__card {
@@ -863,10 +805,7 @@ a {
   position: relative;
   margin-right: 24px;
   margin-top: 25px;
-}
-
-.contact {
-  padding-bottom: 60px;
+  background-color: white;
 }
 
 .contact__card-img {
@@ -880,11 +819,7 @@ a {
 }
 
 .contact__inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  height: 0;
+  background-color: #f5fef5;
 }
 
 .contact__title {
@@ -979,4 +914,4 @@ a {
   margin-top: 80px;
 }
 
-/*# sourceMappingURL=contact.css.map */
+/*# sourceMappingURL=sspace.css.map */
