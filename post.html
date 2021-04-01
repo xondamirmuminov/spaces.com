@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/post.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+        <nav class="header__inner-bars">
+            <a href="#">
+              <i class="fas fa-bars header-burger"></i>
+            </a>
+        </nav>
+        <nav class="header__inner">
+          <a href="index.html">
+            <img class="footer__logo" src="img/light.svg"
+              alt="" />
+          </a>
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a class="header__list-link" href="#">
+              Front Pages <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="header__menu">
+              <div>
+                <h3 class="header__menu-title">Main Pages</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="landing.html"> Landing </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="landing2.html"> Landing 2 </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="landing3.html"> Landing 3 </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="about.html"> About </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="pricing.html"> Pricing </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="team.html"> Team </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="contact.html"> Contact </a>
+                </li>
+                <h3 class="header__menu-title">Legal</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Legal center </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">
+                    Teerms & agreement
+                  </a>
+                </li>
+              </div>
+              <div>
+                <h3 class="header__menu-title">Listing</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="aspace.html"> All spaces </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="map.html"> Map view </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="sspace.html">
+                    All spaces sidebar
+                  </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="sspace.html"> Space details </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="public.html"> Profile </a>
+                </li>
+                <h3 class="header__menu-title">Support</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="support.html"> Support center </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="support.html"> Support topic </a>
+                </li>
+                <h3 class="header__menu-title">Blog</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="blog.html"> Blog </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="post.html"> Blog post </a>
+                </li>
+              </div>
+              <div>
+                <h3 class="header__menu-title">User</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Sign in </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Sign up </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Forgot password </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Reset password </a>
+                </li>
+                <h3 class="header__menu-title">Special</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> 404 Not Found </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> 505 Server Error </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Maintenance </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Coming soon </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Blank page </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="#">
+              Dashboard <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="header__menu">
+              <div>
+                <h3 class="header__menu-title">User dashboard</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> My account </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Settigs </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Security </a>
+                </li>
+                <h3 class="header__menu-title">Items</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> My item </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Edit item </a>
+                </li>
+              </div>
+              <div>
+                <h3 class="header__menu-title">Messaging</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Messages </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Chat </a>
+                </li>
+                <h3 class="header__menu-title">Billing</h3>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Billing details </a>
+                </li>
+                <li class="header__menu-item">
+                  <a class="header__menu-link" href="#"> Invoice </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+          <li class="header__list-item">
+            <a class="header__list-link" href="#">
+              Support <i class="fas fa-chevron-down"></i>
+            </a>
+            <ul class="header__menu">
+              <div>
+                <li class="header__menu-item">
+                  <i class="fas fa-file"></i>
+                  <div>
+                    <h3 class="header__menu-title">Documentation</h3>
+                    <p class="header__menu-title">Examples and guides</p>
+                  </div>
+                  <p class="bg-red">v3.0</p>
+                </li>
+                <li class="header__menu-item">
+                  <i class="fas fa-microphone"></i>
+                  <div>
+                    <h3 class="header__menu-title">Support</h3>
+                    <p class="header__menu-title">Looking for answers?</p>
+                  </div>
+                  <p class="bg-red">v3.0</p>
+                </li>
+              </div>
+            </ul>
+          </li>
+        </ul>
+        <div class="header__inner-btn">
+          <button class="default__btn btn">
+            <i class="fas fa-book"></i> Components
+          </button>
+          <button class="default__btn default__btn--red btn">
+            <i class="fas fa-shopping-bag"></i> Buy now
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section class="home">
+    <div class="container">
+        <div class="home__inner">
+            <div class="home__inner-link">
+                <a class="home__link" href="#">
+                    SEO
+                </a>
+                <a class="home__link" href="#">
+                    MARKETING
+                </a>
+            </div>
+            <h1 class="home__title">90% of content gets no traffic from Google. How to improve it ?</h1>
+            <div class="home__footer">
+                <p class="home__footer-text">James Curran</p>
+                <p class="home__footer-text">January 31, 2020 </p>
+                <p class="home__footer-text"> 7 min read</p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <p class="about__text">Adding a dark mode is basically adding a theme. The principles are the same for adding a light mode to a dark website or alternative styling based on user-defined variables, the time of year or holidays.</p>
+                <p class="about__text">I added theming with a mix of and CSS. In this post I’ll go step by step into the details of how I did it and what I learned.</p>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias expedita earum modi sint voluptatum nemo assumenda explicabo laboriosam unde excepturi, necessitatibus consequatur quo! Quis impedit excepturi ut, alias omnis harum?
+
+                </p>
+                <img class="about__img" src="img/image-2.jpg" alt="">
+                <h2 class="about__title">Setup</h2>
+                <p class="about__text">The themes <a href="#" class="about__link"> activated by CSS classes</a> on the root element. When the page is loaded, I want to apply the theme that most likely suits the visitor (you!) best. After all, most people don’t like configuring websites before they can read a blog post, so the the whole theming feature would likely remain unused otherwise. So I have to make a guess about what the visitor wants and expects. I do that in this order:</p>
+                <div class="about__block--right">
+                    <p class="about__text">1. I assume people don’t want the theme to change when they navigate between pages. So if the page loaded isn’t the first page they visit, I want to use the theme that was used before.</p>
+                    <p class="about__text">2. If it’s the first page they view on my site, their browser may be able to tell their preference.
+                    </p>
+                    <p class="about__text">3. If no preference is available, we can base the choice based on whether it’s day or night.</p>
+                </div>
+                <p class="about__text">Every time a page is loaded, in the current or a new tab, it checks if a theme was set previously. Because the preference for a light or dark theme can change during the day, with every change, I add a time stamp to the saved setting. Only when the state was saved less than two hours ago, it’s applied:</p>
+                <p class="about__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque distinctio nemo tempora similique necessitatibus asperiores inventore ipsum, nostrum velit, quasi vitae natus numquam veritatis nobis, reiciendis deleniti facere molestias a.</p>
+                <h2 class="about__title--xlg">Header 2</h2>
+                <h3 class="about__title--lg">Header 3</h3>
+                <h4 class="about__title--md">Header 4</h4>
+                <h5 class="about__title--sm">Header 5</h5>
+                <h6 class="about__title--xsm">Header 6</h6>
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi velit perferendis labore vel, necessitatibus laboriosam fugit inventore ad odio tenetur vitae veritatis, earum numquam consectetur voluptatem illum, sequi asperiores commodi?</p>
+                <ul class="about__list">
+                    <li class="about__list-item">list item 1</li>
+                    <li class="about__list-item">list item 2</li>
+                    <li class="about__list-item">list item 3</li>
+                </ul>
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit corrupti dolorem at iste perferendis! Modi praesentium vel, rem aliquid illo, nostrum asperiores dolorem corrupti odio tempora impedit deleniti eius voluptatibus.</p>
+                <div class="about__inner-link">
+                    <div class="about__inner-icon">
+                        <h3>Share:  
+                        </h3>
+                        <a href="#">
+                            <i class="fab fa-twitter about__icon about__icon--twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-facebook-f about__icon about__icon--facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-reddit-alien about__icon about__icon--reddit"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <i class="fas fa-bookmark"></i>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <button class="default__btn--blue mr-2">23</button>
+                    <h4>Comments</h4>
+                </div>
+                <textarea class="about__text-area" cols="30" placeholder="Add your comment" rows="5"></textarea>
+                <div class="j-beetwen">
+                    <span>1000 characters remaining
+                        </span>
+                        <button class="default__btn--blue btn">Send</button>
+                </div>
+                <div class="about__card">
+                    <div class="about__card-head">
+                        <div class="about__card-head-block">
+                            <a href="#">
+                                <img class="about__card-img" src="img/profile-picture-1.jpg" alt="">
+                            </a>
+                            <h4 class="about__card-head-title"> John Doe </h4>
+                            <span class="about__card-head-text">2 min ago
+                            </span>
+                        </div>
+                        <div>
+                            <a href="#">
+                                <i class="fas fa-flag about__card-head-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="about__card-body">
+                        <p class="about__card-text">I really like that the Pixel uses a lot of Bootstrap 4's classes to position elements across the website. I also like the fact that we can get a version of the code without Sass if needed.</p>
+                        <p class="about__card-text">When is the next product coming? :)</p>
+                    </div>
+                    <div class="about__card-footer">
+                        <div class="about__card-footer-block">
+                            <a href="#">
+                                <i class="fas fa-thumbs-up about__card-footer-icon about__card-footer-icon--green"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-thumbs-down about__card-footer-icon about__card-footer-icon--red"></i>
+                            </a>
+                            <span class="about__card-footer-text">4 likes</span>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </body>
+</html>    

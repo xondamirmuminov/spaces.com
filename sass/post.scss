@@ -1,0 +1,326 @@
+@import '_variables.scss';
+@import '_loop.scss';
+@import '_responsivet.scss';
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    background-color: $blue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-burger {
+    color: white;
+    font-size: 35px;
+    display: none;
+}
+.header__list {
+    display: flex;
+    align-items: center;
+}
+.header__list-item {
+    margin-right: 40px;
+    display: flex;
+}
+.header__list-link {
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.header__list-item:hover .header__menu {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 4px;
+    position: absolute;
+    top: 50px;
+}
+.home__menu::before * {
+    z-index: 9;
+}
+.header__menu {
+    display: none;
+    align-items: center;
+}
+.header__menu-title {
+    margin-right: 30px;
+}
+.header__menu-item {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+.header__menu-link {
+    color: gray;
+}
+.header__menu-link:hover {
+    color: $red;
+}
+.default__btn {
+    border-radius: 6px;
+    border: 2px solid white;
+    background-color: $blue;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.default__btn--red {
+  background-color: $red;
+  color: white;
+  border: 0;
+  padding: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+.default__btn--blue {
+    background-color: $blue;
+    color: white;
+    border-radius: 6px;
+    border: 2px solid white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.default__btn--blue:hover {
+    background-color: black;
+}
+.default__btn--black {
+    color: $blue;
+    border: 1px solid $blue;
+    background-color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.default__btn:hover {
+    background-color: white;
+    color: $blue;
+}
+.default__btn--red:hover {
+    background-color: $red;
+    color: white;
+    opacity: 0.9;
+}
+.default__btn--black:hover {
+    color: $wht;
+    border: 1px solid $wht;
+    background-color: $blue;
+}   
+.footer__logo {
+    max-width: 150px;
+    width: 100%;
+    margin-right: 40px;
+}
+.home {
+    color: white;
+    background-color: $blue;
+    padding-top: 70px;
+    height: 70vh;
+}
+.home__title {
+    margin-top: 0;
+    text-align: center;
+    font-size: 40px;
+    width: 70%;
+    margin-bottom: 0;
+    margin: auto;
+}
+.home__inner-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.home__link {
+    color: white;
+    margin: 8px;
+    background-color: $red;
+    font-size: 14px;
+    padding: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 6px;
+}
+.home__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.home__footer-text {
+    margin: 10px;
+    font-size: 18px;
+}
+.about {
+    padding-top: 60px;
+}
+.about__inner {
+    width: 60%;
+    margin: auto;
+    color: $blue;
+}
+.about__text {
+    font-size: 20px;
+    color: $blue;
+    margin-top: 35px;
+}
+.about__img {
+    width: 100%;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+.about__title {
+    font-size: 30px;
+    margin-top: 20px;    
+}
+.about__link {
+    color: $red;
+    font-weight: 600;
+    border-bottom: 2px solid $red;
+    font-size: 22px;
+}
+.about__link:hover {
+    border-bottom: 0;
+}
+.about__block--right {
+    padding-left: 40px;
+}
+.about__title--xlg {
+    font-size: 35px;
+    margin-top: 10px;
+}
+.about__title--lg {
+    font-size: 30px;
+    margin-top: 15px;
+}
+.about__title--md {
+    font-size: 25px;
+    margin-top: 15px;
+}
+.about__title--sm {
+    font-size: 20px;
+    margin-top: 15px;
+}
+.about__title--xsm {
+    font-size: 16px;
+    margin-top: 15px;
+}
+.about__list-item {
+    margin-top: 24px;
+    font-size: 22px;
+    list-style: inside;
+}
+.about__inner-icon {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.about__icon {
+    margin-left: 10px;
+}
+.about__icon--twitter {
+    color: white;
+    background-color: rgb(29, 161, 242);
+    padding: 10px;
+    border-radius: 50%;
+}
+.about__icon--twitter:hover {
+    background-color: rgb(7, 129, 204);
+}
+.about__icon--facebook {
+    color: white;
+    background-color: rgb(66, 103, 178);
+    padding: 10px 14px;
+    border-radius: 50%;
+}
+.about__icon--facebook:hover {
+    background-color: rgb(44, 74, 133);
+}
+.about__icon--reddit {
+    color: white;
+    background-color:#e84422;
+    padding: 11px 12px;
+    border-radius: 50%;
+}
+.about__icon--reddit:hover {
+    background-color: #a12f18;
+}
+.about__inner-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.about__text-area {
+    width: 100%;
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 20px;
+}
+.about__card {
+    width: 100%;
+    background-color: #f5fef9;
+    border-radius: 6px;
+    border: 1px solid gainsboro;
+    margin-top: 24px;
+    padding: 24px;
+}
+.about__card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.about__card-head-block {
+    display: flex;
+    align-items: center;
+}
+.about__card-img {
+    width: 100%;
+    max-width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.about__card-head-text {
+    font-size: 14px;
+    margin-left: 10px;
+}
+.about__card-head-icon {
+    font-size: 20px;
+    color: $red;
+}
+.about__card-text {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-top: 15px;
+}
