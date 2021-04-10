@@ -2,6 +2,10 @@
 @import '_responsiva.scss';
 @import '_loop.scss';
 
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+}
 body {
     box-sizing: border-box;
     margin: 0;

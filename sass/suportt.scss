@@ -1,6 +1,6 @@
 @import '_variables.scss';
-@import '_responsivep.scss';
 @import '_loop.scss';
+@import '_responsivet.scss';
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -24,10 +24,9 @@ a {
     text-decoration: none;
 }
 .header {
+    background-color: $blue;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: #f5f9fe;
-    color: $blue;
 }
 .header__inner {
     display: flex;
@@ -36,7 +35,7 @@ a {
     position: relative;
 }
 .header-burger {
-    color: $blue;
+    color: white;
     font-size: 35px;
     display: none;
 }
@@ -49,7 +48,7 @@ a {
     display: flex;
 }
 .header__list-link {
-    color: $blue;
+    color: white;
     font-size: 17px;
     font-weight: 600;
 }
@@ -60,6 +59,9 @@ a {
     border-radius: 4px;
     position: absolute;
     top: 50px;
+}
+.home__menu::before * {
+    z-index: 9;
 }
 .header__menu {
     display: none;
@@ -90,14 +92,26 @@ a {
     cursor: pointer;
 }
 .default__btn--red {
-  background-color: $red;
+  background-color: $d-red;
   color: white;
   border: 0;
   padding: 12px;
   margin-left: 15px;
   cursor: pointer;
-  border-radius: 6px;
-  border: 2px solid white;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.default__btn--green {
+  background-color: $green;
+  color: white;
+  border: 0;
+  padding: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
   font-size: 17px;
   font-weight: 600;
 }
@@ -119,16 +133,17 @@ a {
     border: 1px solid $blue;
     background-color: white;
     margin-right: 15px;
+    border-radius: 6px;
+    cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
     font-weight: 600;
-    cursor: pointer;
-    border-radius: 6px;
+    width: 50%;
+    margin-top: 20px;
 }
 .default__btn:hover {
     background-color: white;
     color: $blue;
-    border: 1px solid $blue;
 }
 .default__btn--red:hover {
     background-color: $red;
@@ -146,183 +161,121 @@ a {
     margin-right: 40px;
 }
 .home {
-    background-color: #f5f9fe;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    color: white;
+    background-color: $blue;
+    padding-top: 70px;
 }
 .home__title {
     margin-top: 0;
+    text-align: center;
     font-size: 47px;
-    text-align: center;
-    color: $blue;
-}
-.home__title--sm {
-    margin-top: 0;
-    font-size: 35px;
-    margin-top: 40px;
-    text-align: center;
-    color: $blue;
-    margin-bottom: 5px;
-}
-.home__text {
-    font-size: 23px;
-    line-height: 1.8;
-    text-align: center;
-    max-width: 800px;
-    margin: auto;
-    color: $blue;
-}
-.home__inner-card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-}
-.home__card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 6px;
-    margin-left: 35px;
-    margin-top: 80px;
-    max-width: 300px;
-    width: 100%;
-    color: $blue;
-}
-.home__card-icon {
-    display: flex;
-    border-bottom: 1px solid gainsboro;
-}
-.home__card-icon-title {
-    font-size: 55px;
-    font-weight: 600;
-    margin: 0;
-}
-.home__card-icon-span {
-    font-size: 24px;
-    font-weight: 600;
-}
-.home__card-icon-span--end {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-}
-.home__card-title {
-    margin-top: 5px;
-    font-size: 30px;
-    text-align: center;
-}
-.home__card-text {
-    margin-bottom: 30px;
-    line-height: 1.8;
-}
-.about {
-    margin-top: 80px;
-}
-.about__title {
-    font-size: 40px;
-    color: $blue;
-    text-align: center;
-}
-.about__text {
-    font-size: 19px;
-    text-align: center;
-    margin-top: 0;
-}
-.about__inner-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.about__card {
-    width: 100%;
-    max-width: 480px;
-    padding: 25px;
-    border: 1px solid gainsboro;
-    border-radius: 6px;
-    margin-right: 30px;
-    display: flex;
-    align-items: flex-start;
-    margin-top: 30px;
-}
-.about__card-icon {
-    font-size: 35px;
-}
-.about__card-title {
-    margin-top: 0;
     margin-bottom: 0;
 }
-.about__card-text {
-    font-size: 17px;
-    color: rgb(75, 75, 75);
-}
-.about__accordion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.home__text {
     text-align: center;
-    padding-bottom: 60px;
-}
-.about__accordion-inner-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    max-width: 750px;
+    font-size: 20px;
+    line-height: 1.8;
     margin: auto;
-    border: 2px solid gainsboro;
-    border-radius: 6px;
-    margin-top: 20px;
-    margin-bottom: 60px;
-    width: 90%;
+    margin-top: 15px;
 }
-.about__accordion-card {
-    width: 100%;
-    border-bottom: 1px solid gainsboro;
+.home__inner {
+    height: 75vh;
 }
-.about__accordion-card:hover {
-    background-color: $info;
-}
-.about__accordion-card:hover .about__accordion-card-body {
-    display: block;
-}
-.about__accordion-card-head {
+.about__inner {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid gainsboro;
+    padding: 30px;
+    transform: translate(0px, -240px);
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
 }
-.about__accordion-card-title {
-    color: black;
-}
-.about__accordion-title {
-    text-align: center;
-    font-size: 40px;
-}
-.about__accordion-card-body {
-    display: none;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.about__accordion-text {
+.about__text {
+    color: $blue;
+    font-size: 20px;
+    line-height: 1.6;
+    display: flex;
     margin-bottom: 20px;
+}
+.about__inner-text {
+    background-color: gold;
+    display: flex;
+    border-radius: 6px;
+    color: $blue;
+    padding: 15px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.about__inner-text i {
+    font-size: 22px;
+    padding-top: 8px;
+}
+.about__text--sm {
     font-size: 18px;
+    line-height: 1.4;
+    margin-left: 20px;
 }
-.text--lg {
-    font-size: 50px;
+.about__title {
+    color: $blue;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.about__footer {
-    background-color: #f5f9fe;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    line-height: 2;
+.about__link {
+    color: $red;
+    margin-left: 10px;
 }
+.about__list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about__list-item {
+    color: $red;
+    list-style: disc;
+    line-height: 1.8;
+    font-size: 18px;
+    margin-top: 14px;
+}
+.about__title--sm {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.about__title-icon {
+    margin-right: 10px;
+}
+.about__inner-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    flex-wrap: wrap;
+}
+.about__block {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin-top: 35px;
+}
+.about__block-link {
+    color: $red;
+    margin-top: 12px;
+    font-size: 17px;
+    font-weight: 600;
+}
+.about__block-text {
+    color: $blue;
+    line-height: 1.6;
+    margin-top: 15px;
+    font-size: 17px;
+} 
 .footer {
     background-color: $blue;
     color: white;
+    padding-top: 80px;
     padding-bottom: 80px;
-    padding-top: 50px;
 }
 .footer__logo {
     max-width: 150px;

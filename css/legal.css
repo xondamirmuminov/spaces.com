@@ -340,6 +340,27 @@
   .home__main-inner-card--text {
     flex-direction: column !important;
   }
+
+  .about__inner {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .home__title {
+    font-size: 35px !important;
+  }
+
+  .home__title--lg {
+    font-size: 40px !important;
+  }
+
+  .home {
+    height: 80vh !important;
+  }
+
+  .home__footer {
+    flex-wrap: wrap !important;
+  }
 }
 @media screen and (max-width: 616px) {
   .footer__inner {
@@ -358,11 +379,15 @@
   }
 
   .home__title, .home2__title {
+    font-size: 35px !important;
+  }
+
+  .home__title--lg {
     font-size: 40px !important;
   }
 
   .home__text {
-    font-size: 17px !important;
+    font-size: 16px !important;
   }
 
   .home__main-img {
@@ -387,6 +412,20 @@
   .contact__card {
     margin-right: 0 !important;
   }
+
+  .about__inner-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__inner-text i {
+    font-size: 36px !important;
+    margin-bottom: 16px;
+  }
+
+  .about__list-item {
+    font-size: 16px !important;
+  }
 }
 @media screen and (max-width: 560px) {
   .about__card-title {
@@ -405,11 +444,34 @@
   .about__menu-card {
     margin-right: 0 !important;
   }
+
+  .about__title--sm {
+    flex-direction: column !important;
+  }
 }
 @media screen and (max-width: 497px) {
   .home__main-card {
     margin-left: 0 !important;
     width: 100% !important;
+  }
+
+  .home__title {
+    font-size: 25px !important;
+  }
+
+  .home__title--lg {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .about__inner-btn {
+    flex-direction: column;
+  }
+
+  .about__btn {
+    margin-bottom: 15px;
+    margin-left: 0 !important;
+    width: 80% !important;
   }
 }
 @media screen and (max-width: 400px) {
@@ -597,223 +659,95 @@ a {
   color: white;
   background-color: #0d1b48;
   padding-top: 70px;
-  height: 70vh;
 }
 
 .home__title {
   margin-top: 0;
   text-align: center;
-  font-size: 40px;
-  width: 70%;
+  font-size: 47px;
   margin-bottom: 0;
+}
+
+.home__text {
+  text-align: center;
+  max-width: 750px;
+  font-size: 20px;
+  line-height: 1.8;
   margin: auto;
+  margin-top: 15px;
 }
 
-.home__inner-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.home__link {
-  color: white;
-  margin: 8px;
-  background-color: #c33c54;
-  font-size: 14px;
-  padding: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 6px;
-}
-
-.home__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
-
-.home__footer-text {
-  margin: 10px;
-  font-size: 18px;
-}
-
-.about {
-  padding-top: 60px;
+.home__inner {
+  height: 75vh;
 }
 
 .about__inner {
-  width: 60%;
-  margin: auto;
-  color: #0d1b48;
+  transform: translate(0px, -230px);
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid gainsboro;
 }
 
-.about__text {
-  font-size: 20px;
-  color: #0d1b48;
-  margin-top: 35px;
-}
-
-.about__img {
+.about__accordion {
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+  border-radius: 8px;
   width: 100%;
-  border-radius: 6px;
-  margin-top: 30px;
+  height: 80px;
+  overflow: hidden;
+  transition: 1s;
+  background-color: white;
 }
 
-.about__title {
-  font-size: 30px;
-  margin-top: 20px;
+.about__accordion--active {
+  height: 250px !important;
+  overflow: inherit !important;
+  transition: 2s;
 }
 
-.about__link {
+.about__accordion-plus--active {
+  transform: rotate(45deg);
+}
+
+.about__accordion:hover {
+  background-color: #f5fef9;
+}
+
+.about__accordion-head {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__accordion-plus {
+  color: #0d1b48;
+  font-size: 28px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.about__accordion-body {
+  opacity: 0;
+  transition: 1s;
+}
+
+.about__accordion-body--active {
+  opacity: 1 !important;
+}
+
+.about__accordion-text {
+  color: #0d1b48;
+  font-size: 17px;
+  display: flex;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+.about__accordion-link {
   color: #c33c54;
   font-weight: 600;
-  border-bottom: 2px solid #c33c54;
-  font-size: 22px;
-}
-
-.about__link:hover {
-  border-bottom: 0;
-}
-
-.about__block--right {
-  padding-left: 40px;
-}
-
-.about__title--xlg {
-  font-size: 35px;
-  margin-top: 10px;
-}
-
-.about__title--lg {
-  font-size: 30px;
-  margin-top: 15px;
-}
-
-.about__title--md {
-  font-size: 25px;
-  margin-top: 15px;
-}
-
-.about__title--sm {
-  font-size: 20px;
-  margin-top: 15px;
-}
-
-.about__title--xsm {
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-.about__list-item {
-  margin-top: 24px;
-  font-size: 22px;
-  list-style: inside;
-}
-
-.about__inner-icon {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-}
-
-.about__icon {
   margin-left: 10px;
 }
 
-.about__icon--twitter {
-  color: white;
-  background-color: #1da1f2;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.about__icon--twitter:hover {
-  background-color: #0781cc;
-}
-
-.about__icon--facebook {
-  color: white;
-  background-color: #4267b2;
-  padding: 10px 14px;
-  border-radius: 50%;
-}
-
-.about__icon--facebook:hover {
-  background-color: #2c4a85;
-}
-
-.about__icon--reddit {
-  color: white;
-  background-color: #e84422;
-  padding: 11px 12px;
-  border-radius: 50%;
-}
-
-.about__icon--reddit:hover {
-  background-color: #a12f18;
-}
-
-.about__inner-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.about__text-area {
-  width: 100%;
-  margin-top: 40px;
-  border-radius: 6px;
-  border: 1px solid gainsboro;
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  padding: 20px;
-}
-
-.about__card {
-  width: 100%;
-  background-color: #f5fef9;
-  border-radius: 6px;
-  border: 1px solid gainsboro;
-  margin-top: 24px;
-  padding: 24px;
-}
-
-.about__card-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
-.about__card-head-block {
-  display: flex;
-  align-items: center;
-}
-
-.about__card-img {
-  width: 100%;
-  max-width: 40px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.about__card-head-text {
-  font-size: 14px;
-  margin-left: 10px;
-}
-
-.about__card-head-icon {
-  font-size: 20px;
-  color: #c33c54;
-}
-
-.about__card-text {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-top: 15px;
-}
-
-/*# sourceMappingURL=post.css.map */
+/*# sourceMappingURL=legal.css.map */

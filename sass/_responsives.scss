@@ -1,0 +1,93 @@
+@media screen and(max-width:1250px) {
+    .about {
+        margin-top: 350px !important;
+    }
+    .home__inner-card {
+        transform: translate(0px, 40px) !important;
+    }
+}
+@media screen and(max-width:1005px) {
+    .home__form-btn {
+        bottom: 50% !important;
+        right: 15% !important;
+    }
+    .home__title {
+        font-size: 40px !important;
+    }
+    .home__text {
+        font-size: 18px !important;
+    }
+    .header__list, .header__inner-btn {
+        display: none !important;
+    }
+    .header-burger {
+        display: block !important;
+        cursor: pointer !important;
+        color: white !important;
+        display: inline-block !important;
+    }
+    .header__inner {
+        display: inline-block !important;
+        float: left !important;
+    }
+    .header {
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+    .header__inner-bars {
+        display: inline-block !important;
+        float: right !important;
+    } 
+   
+}
+@media screen and(max-width:917px) {
+    .about__card-title {
+        font-size: 22px !important;
+    }
+    .about__card-text {
+        font-size: 17px !important;
+    }
+}
+@media screen and(max-width:749px) {
+    .home__form-btn {
+        bottom: 53% !important;
+    }
+    .home__text {
+        font-size: 16px !important;
+    }
+    .home__title{
+        font-size: 30px !important;
+    }
+}
+@media screen and(max-width:627px) {
+    // .home__inner-card {
+    //    transform: translate(0px, 0px) !important;
+    // }
+    .home__inner {
+        height: 140vh !important;
+    }
+    .home__form-btn {
+        bottom: 48% !important;
+    }
+    .footer__inner {
+        justify-content: center !important;
+    }
+    .footer__block {
+        max-width: 280px !important;
+        margin-right: 10px !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+@media screen and(max-width:576px) {
+    .home__form-btn {
+        bottom: 41% !important;
+    }
+    .home__inp {
+        font-size: 16px !important;
+    }
+    .about__card {
+        width: 90% !important;
+    }
+}
+  

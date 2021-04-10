@@ -271,9 +271,40 @@
     float: right !important;
   }
 }
+@media screen and (max-width: 960px) {
+  .about__card--lg {
+    flex-direction: column;
+    width: 80% !important;
+  }
+
+  .about__menu {
+    padding-top: 550px !important;
+  }
+}
 @media screen and (max-width: 888px) {
   .home__main-inner-card--text {
     flex-direction: column !important;
+  }
+
+  .about__inner {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  .home__title {
+    font-size: 35px !important;
+  }
+
+  .home__title--lg {
+    font-size: 40px !important;
+  }
+
+  .home {
+    height: 80vh !important;
+  }
+
+  .home__footer {
+    flex-wrap: wrap !important;
   }
 }
 @media screen and (max-width: 616px) {
@@ -293,11 +324,15 @@
   }
 
   .home__title, .home2__title {
+    font-size: 35px !important;
+  }
+
+  .home__title--lg {
     font-size: 40px !important;
   }
 
   .home__text {
-    font-size: 17px !important;
+    font-size: 16px !important;
   }
 
   .home__main-img {
@@ -322,11 +357,66 @@
   .contact__card {
     margin-right: 0 !important;
   }
+
+  .about__inner-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__inner-text i {
+    font-size: 36px !important;
+    margin-bottom: 16px;
+  }
+
+  .about__list-item {
+    font-size: 16px !important;
+  }
+}
+@media screen and (max-width: 560px) {
+  .about__card-title {
+    font-size: 25px !important;
+  }
+
+  .about__card-text {
+    font-size: 16px !important;
+  }
+
+  .about__card--lg {
+    width: 100% !important;
+    margin: 5px !important;
+  }
+
+  .about__menu-card {
+    margin-right: 0 !important;
+  }
+
+  .about__title--sm {
+    flex-direction: column !important;
+  }
 }
 @media screen and (max-width: 497px) {
   .home__main-card {
     margin-left: 0 !important;
     width: 100% !important;
+  }
+
+  .home__title {
+    font-size: 25px !important;
+  }
+
+  .home__title--lg {
+    font-size: 40px !important;
+  }
+}
+@media screen and (max-width: 410px) {
+  .about__inner-btn {
+    flex-direction: column;
+  }
+
+  .about__btn {
+    margin-bottom: 15px;
+    margin-left: 0 !important;
+    width: 80% !important;
   }
 }
 @media screen and (max-width: 400px) {
