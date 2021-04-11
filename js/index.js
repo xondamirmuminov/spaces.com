@@ -29,3 +29,5 @@ function accordion(el) {
     }
     console.log(acc);
 };
+
+document.querySelector('#email').disabled = true; 

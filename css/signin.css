@@ -1,0 +1,472 @@
+.bg-red {
+  background-color: #c33c54;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.bg-blue {
+  background-color: #0d1b48;
+  color: white;
+  padding: 4px;
+  border-radius: 25px;
+  font-size: 12px;
+  width: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.f-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 10px;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.j-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.j-center {
+  display: flex;
+  justify-content: center;
+}
+
+.mt-5 {
+  margin-top: 25px;
+}
+
+.border-b {
+  border-bottom: 1px solid;
+  color: white;
+}
+
+.text-bl {
+  color: black;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mr-2 {
+  margin-right: 10px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
+
+.f-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-block {
+  display: block;
+}
+
+.j-beetwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.j-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-gold {
+  color: gold;
+  font-size: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 40px;
+}
+
+.text-blue {
+  color: #0d1b48;
+}
+
+.text-gray {
+  color: gainsboro;
+  font-size: 20px;
+}
+
+.text-dark {
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.text-red {
+  color: #c33c54;
+  margin-right: 8px;
+}
+
+.text-green {
+  color: #3aaf85;
+}
+
+.text-aqua {
+  color: #1da1f2;
+}
+
+.mt-1 {
+  margin-top: 7px;
+}
+
+.mb-1 {
+  margin-bottom: 20px;
+}
+
+.mt-3 {
+  margin-top: 10px;
+}
+
+.lh {
+  line-height: 1.7;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-6 {
+  margin-top: 80px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mr-3 {
+  margin-right: 16px;
+}
+
+.text--md {
+  font-size: 18px;
+}
+
+.border-r {
+  border-right: 1px solid black;
+}
+
+.col-12 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-9 {
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-6 {
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-3 {
+  width: 25%;
+  max-width: 25%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.default__btn {
+  border-radius: 6px;
+  border: 2px solid white;
+  background-color: #0d1b48;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.default__btn--red {
+  background-color: #c33c54;
+  color: white;
+  border: 0;
+  padding: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.default__btn--blue {
+  background-color: #0d1b48;
+  color: white;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.default__btn--blue:hover {
+  background-color: black;
+}
+
+.default__btn--black {
+  color: #0d1b48;
+  border: 1px solid #0d1b48;
+  background-color: white;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.default__btn:hover {
+  background-color: white;
+  color: #0d1b48;
+}
+
+.default__btn--red:hover {
+  background-color: #c33c54;
+  color: white;
+  opacity: 0.9;
+}
+
+.default__btn--black:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: #0d1b48;
+}
+
+.home {
+  background-image: linear-gradient(#0d1b48bd, #0d1b48bd), url(../img/form-image.jpg);
+  height: 115vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home__inner {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home__title {
+  color: white;
+  font-size: 30px;
+}
+
+.home__form {
+  background-color: white;
+  width: 100%;
+  max-width: 460px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.inner-inp {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.inp-label {
+  width: 100%;
+  display: flex;
+  color: #0d1b48;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.home__inp-btn {
+  background-color: white;
+  border: 1px solid gainsboro;
+  color: #4e5079;
+  font-size: 16px;
+  padding: 10.5px 12px;
+  border-radius: 8px 0px 0px 8px;
+}
+.home__inp-btn:focus {
+  outline: 0;
+}
+
+.home__inp {
+  background-color: white;
+  border: 1px solid gainsboro;
+  color: #4e5079;
+  padding: 8px;
+  border-left: 0;
+  font-family: "Poppins", sans-serif;
+  width: 90%;
+  font-size: 15px;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.check-label {
+  color: #4e5079;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+.home__form-link {
+  color: #c33c54;
+  font-size: 14px;
+}
+
+.home__form-inner-check {
+  margin-top: 14px;
+  margin-bottom: 20px;
+}
+
+.home__btn {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.home__form-text {
+  color: #4e5079;
+  font-weight: 600;
+}
+
+.home__inner-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home__facebook-icon, .home__twitter-icon, .home__git-icon {
+  color: #4267b2;
+  border: 1px solid gainsboro;
+  width: 42px;
+  height: 40px;
+  line-height: 2.3;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+.home__facebook-icon:hover, .home__twitter-icon:hover, .home__git-icon:hover {
+  background-color: #e0e0e0;
+}
+
+.home__twitter-icon {
+  color: #1da1f2;
+}
+
+.home__git-icon {
+  color: black;
+}
+
+.home__form-link--lg {
+  font-size: 16px;
+}
+
+.home__inp--disabled {
+  cursor: no-drop;
+}
+
+/*# sourceMappingURL=signin.css.map */

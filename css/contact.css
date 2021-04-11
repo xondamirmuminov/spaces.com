@@ -295,6 +295,10 @@
     font-size: 35px !important;
   }
 
+  .home__title-3 {
+    font-size: 42px !important;
+  }
+
   .home__title--lg {
     font-size: 40px !important;
   }
@@ -329,6 +333,10 @@
 
   .home__title--lg {
     font-size: 40px !important;
+  }
+
+  .home__title-3 {
+    font-size: 38px !important;
   }
 
   .home__text {
@@ -404,6 +412,10 @@
     font-size: 25px !important;
   }
 
+  .home__title-3 {
+    font-size: 36px;
+  }
+
   .home__title--lg {
     font-size: 40px !important;
   }
@@ -422,6 +434,10 @@
 @media screen and (max-width: 400px) {
   .home__card {
     margin-right: 0 !important;
+  }
+
+  .home__title-3 {
+    font-size: 32px !important;
   }
 }
 @media screen and (max-width: 366px) {

@@ -192,61 +192,6 @@
   border-right: 1px solid black;
 }
 
-.col-12 {
-  width: 100%;
-  max-width: 100%;
-}
-
-.col-11 {
-  width: 91.6666666667%;
-  max-width: 91.6666666667%;
-}
-
-.col-10 {
-  width: 83.3333333333%;
-  max-width: 83.3333333333%;
-}
-
-.col-9 {
-  width: 75%;
-  max-width: 75%;
-}
-
-.col-8 {
-  width: 66.6666666667%;
-  max-width: 66.6666666667%;
-}
-
-.col-7 {
-  width: 58.3333333333%;
-  max-width: 58.3333333333%;
-}
-
-.col-6 {
-  width: 50%;
-  max-width: 50%;
-}
-
-.col-5 {
-  width: 41.6666666667%;
-  max-width: 41.6666666667%;
-}
-
-.col-4 {
-  width: 33.3333333333%;
-  max-width: 33.3333333333%;
-}
-
-.col-3 {
-  width: 25%;
-  max-width: 25%;
-}
-
-.col-2 {
-  width: 16.6666666667%;
-  max-width: 16.6666666667%;
-}
-
 @media screen and (max-width: 1130px) {
   .home__card {
     margin-top: 115px !important;
@@ -508,6 +453,61 @@
     min-width: auto !important;
   }
 }
+.col-12 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.col-11 {
+  width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+
+.col-10 {
+  width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+
+.col-9 {
+  width: 75%;
+  max-width: 75%;
+}
+
+.col-8 {
+  width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+
+.col-7 {
+  width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+
+.col-6 {
+  width: 50%;
+  max-width: 50%;
+}
+
+.col-5 {
+  width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+
+.col-4 {
+  width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+
+.col-3 {
+  width: 25%;
+  max-width: 25%;
+}
+
+.col-2 {
+  width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+
 *, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
@@ -535,9 +535,10 @@ a {
 }
 
 .header {
-  background-color: #0d1b48;
   padding-top: 20px;
   padding-bottom: 20px;
+  background-color: #f5f9fe;
+  color: #0d1b48;
 }
 
 .header__inner {
@@ -548,9 +549,10 @@ a {
 }
 
 .header-burger {
-  color: white;
+  color: #0d1b48;
   font-size: 35px;
   display: none;
+  color: #0d1b48 !important;
 }
 
 .header__list {
@@ -564,7 +566,7 @@ a {
 }
 
 .header__list-link {
-  color: white;
+  color: #0d1b48;
   font-size: 17px;
   font-weight: 600;
 }
@@ -576,10 +578,6 @@ a {
   border-radius: 4px;
   position: absolute;
   top: 50px;
-}
-
-.home__menu::before * {
-  z-index: 9;
 }
 
 .header__menu {
@@ -623,6 +621,11 @@ a {
   padding: 12px;
   margin-left: 15px;
   cursor: pointer;
+  border-radius: 6px;
+  border: 2px solid white;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .default__btn--blue {
@@ -645,12 +648,17 @@ a {
   border: 1px solid #0d1b48;
   background-color: white;
   margin-right: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  font-weight: 600;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .default__btn:hover {
   background-color: white;
   color: #0d1b48;
+  border: 1px solid #0d1b48;
 }
 
 .default__btn--red:hover {
@@ -672,254 +680,113 @@ a {
 }
 
 .home {
-  color: white;
-  background-color: #0d1b48;
-  padding-top: 70px;
-  height: 70vh;
+  background-color: #f5f9fe;
+  padding-top: 60px;
+  flex-direction: column;
+  text-align: center;
+  height: 85vh;
 }
 
 .home__title {
   margin-top: 0;
-  text-align: center;
-  font-size: 40px;
-  width: 70%;
-  margin-bottom: 0;
-  margin: auto;
+  font-size: 46px;
 }
 
-.home__inner-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.home__link {
-  color: white;
-  margin: 8px;
-  background-color: #c33c54;
-  font-size: 14px;
-  padding: 2px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 6px;
-}
-
-.home__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-}
-
-.home__footer-text {
-  margin: 10px;
+.home__text {
   font-size: 18px;
+  line-height: 1.8;
+}
+
+.default__btn--green {
+  background-color: #208163;
+  color: white;
+  border: 0;
+  padding: 12px;
+  margin-left: 15px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  font-size: 17px;
+  font-weight: 600;
 }
 
 .about {
-  padding-top: 60px;
+  background-color: #f5f9fe;
 }
 
 .about__inner {
-  width: 60%;
-  margin: auto;
-  color: #0d1b48;
-}
-
-.about__text {
-  font-size: 20px;
-  color: #0d1b48;
-  margin-top: 35px;
-}
-
-.about__img {
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 30px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  padding-top: 5px;
+  transform: translate(0px, -220px);
 }
 
 .about__title {
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 50px;
+}
+
+.about__text {
+  color: #0d1b48;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-top: 16px;
 }
 
 .about__link {
   color: #c33c54;
-  font-weight: 600;
-  border-bottom: 2px solid #c33c54;
-  font-size: 22px;
-}
-
-.about__link:hover {
-  border-bottom: 0;
-}
-
-.about__block--right {
-  padding-left: 40px;
-}
-
-.about__title--xlg {
-  font-size: 35px;
-  margin-top: 10px;
-}
-
-.about__title--lg {
-  font-size: 30px;
-  margin-top: 15px;
-}
-
-.about__title--md {
-  font-size: 25px;
-  margin-top: 15px;
-}
-
-.about__title--sm {
-  font-size: 20px;
-  margin-top: 15px;
-}
-
-.about__title--xsm {
-  font-size: 16px;
-  margin-top: 15px;
-}
-
-.about__list-item {
-  margin-top: 24px;
-  font-size: 22px;
-  list-style: inside;
-}
-
-.about__inner-icon {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-}
-
-.about__icon {
   margin-left: 10px;
 }
 
-.about__icon--twitter {
-  color: white;
-  background-color: #1da1f2;
-  padding: 10px;
-  border-radius: 50%;
-}
-
-.about__icon--twitter:hover {
-  background-color: #0781cc;
-}
-
-.about__icon--facebook {
-  color: white;
-  background-color: #4267b2;
-  padding: 10px 14px;
-  border-radius: 50%;
-}
-
-.about__icon--facebook:hover {
-  background-color: #2c4a85;
-}
-
-.about__icon--reddit {
-  color: white;
-  background-color: #e84422;
-  padding: 11px 12px;
-  border-radius: 50%;
-}
-
-.about__icon--reddit:hover {
-  background-color: #a12f18;
-}
-
-.about__inner-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.about__list {
+  margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.about__text-area {
-  width: 100%;
-  margin-top: 40px;
-  border-radius: 6px;
-  border: 1px solid gainsboro;
-  font-family: "Poppins", sans-serif;
+.about__list-item {
+  color: #c33c54;
+  list-style: disc;
+  line-height: 1.8;
   font-size: 18px;
-  padding: 20px;
+  margin-top: 14px;
 }
 
-.about__card {
-  width: 100%;
-  background-color: #f5fef9;
-  border-radius: 6px;
-  border: 1px solid gainsboro;
-  margin-top: 24px;
-  padding: 24px;
+.about__title--sm {
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 
-.about__card--sm {
-  width: 90%;
-  margin-left: auto;
-}
-
-.about__card-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 10px;
-}
-
-.about__card-head-block {
-  display: flex;
-  align-items: center;
-}
-
-.about__card-img {
-  width: 100%;
-  max-width: 40px;
-  border-radius: 50%;
+.about__title-icon {
   margin-right: 10px;
 }
 
-.about__card-head-text {
-  font-size: 14px;
-  margin-left: 10px;
-}
-
-.about__card-head-icon {
-  font-size: 20px;
-  color: #c33c54;
-}
-
-.about__card-text {
-  font-size: 17px;
-  line-height: 1.6;
-  margin-top: 15px;
-}
-
-.about__card-footer {
-  padding-top: 30px;
+.about__inner-block {
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
+  flex-wrap: wrap;
 }
 
-.about__card-footer-block {
+.about__block {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  margin-top: 35px;
 }
 
-.about__card-footer-icon--green {
-  color: #208163;
-  font-size: 18px;
-  margin-right: 15px;
-}
-
-.about__card-footer-icon--red {
+.about__block-link {
   color: #c33c54;
-  font-size: 18px;
-  margin-right: 15px;
+  margin-top: 12px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.about__block-text {
+  color: #0d1b48;
+  line-height: 1.6;
+  margin-top: 15px;
+  font-size: 17px;
 }
 
 .footer {
@@ -927,7 +794,6 @@ a {
   color: white;
   padding-top: 80px;
   padding-bottom: 80px;
-  margin-top: 80px;
 }
 
 .footer__logo {
@@ -1006,15 +872,15 @@ a {
   display: flex;
 }
 
-.home__logo--sm {
+.home__logo-sm {
   max-width: 30px;
   margin-top: 80px;
 }
 
-.home__link--white {
+.home__link {
   margin-top: 10px;
   color: white;
   font-size: 16px;
 }
 
-/*# sourceMappingURL=post.css.map */
+/*# sourceMappingURL=terms.css.map */
