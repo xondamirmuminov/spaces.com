@@ -192,33 +192,39 @@
   border-right: 1px solid black;
 }
 
-@media screen and (max-width: 1300px) {
-  .home__block--lg {
-    max-width: 650px !important;
+@media screen and (max-width: 1130px) {
+  .about__cards-inner {
+    justify-content: center !important;
+  }
+
+  .about__cards-card {
+    margin-right: 35px !important;
+  }
+
+  .about__gallery-card--lg, .about__gallery-card--sm, .about__gallery-card--md, .about__gallery-card--xxl, .about__gallery-card--xsm {
+    width: 400px !important;
+    height: 400px !important;
+    max-width: 100% !important;
+    margin-right: 20px !important;
+  }
+
+  .about__gallery-card--column {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .about__gallery-inner-card {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
   }
 
   .home__block {
-    max-width: 320px !important;
-  }
-
-  .home__block-card-img--circle {
-    left: 100px !important;
+    margin-bottom: 60px !important;
   }
 }
-@media screen and (max-width: 1100px) {
-  .home__block--lg {
-    max-width: 630px !important;
-  }
-
-  .home__block {
-    max-width: 300px !important;
-  }
-
-  .home__block-card-img--circle {
-    left: 100px !important;
-  }
-}
-@media screen and (max-width: 1021px) {
+@media screen and (max-width: 1015px) {
   .header__list, .header__inner-btn {
     display: none !important;
   }
@@ -235,50 +241,39 @@
     float: left !important;
   }
 
+  .header {
+    align-items: center !important;
+    justify-content: space-between !important;
+  }
+
   .header__inner-bars {
     display: inline-block !important;
     float: right !important;
   }
-
-  .home__inner {
-    flex-direction: column !important;
-    margin-top: 40px;
-  }
-
-  .home__cards-card {
-    display: inline-block !important;
-  }
-
-  .home__block--lg {
-    margin-left: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    justify-content: center;
-  }
-
-  .home__cards-card-img {
-    width: auto !important;
-    max-width: 320px !important;
+}
+@media screen and (max-width: 815px) {
+  .home__block--lg, .contact__block--lg {
+    display: none !important;
   }
 
   .home__block {
-    max-width: 100% !important;
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
   }
 
-  .home__block-card-img--circle {
-    left: 40% !important;
-  }
-
-  .home__cards-card {
-    max-width: 350px !important;
-    height: 540px !important;
-    margin-right: 20px;
+  .contact__block {
+    justify-content: center !important;
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 }
-@media screen and (max-width: 616px) {
+@media screen and (max-width: 610px) {
   .footer__inner {
     justify-content: center !important;
   }
@@ -290,32 +285,50 @@
     margin-bottom: 20px;
   }
 
-  .about__card {
+  .contact__slider-item {
+    max-width: 420px !important;
+  }
+
+  .home__slider-item {
+    max-width: 500px !important;
+  }
+
+  .about__gallery-card--lg, .about__gallery-card--sm, .about__gallery-card--md, .about__gallery-card--xxl, .about__gallery-card--xsm {
+    width: 320px !important;
+  }
+
+  .contact__footer-inner {
+    flex-direction: column !important;
+  }
+
+  .about__cards-card {
     margin-right: 0 !important;
-    max-width: 450px !important;
   }
 
-  .home__title--sm {
-    font-size: 30px !important;
+  .contact__footer-block {
+    display: none !important;
   }
 
-  .home__text {
-    font-size: 19px !important;
-  }
-
-  .home__title {
-    font-size: 35px !important;
-  }
-
-  .about__footer-icon {
-    font-size: 35px !important;
-  }
-
-  .home__card {
-    margin-left: 0 !important;
+  .contact__footer-block--sm {
+    margin-bottom: 20px !important;
+    width: 100% !important;
   }
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 425px) {
+  .about__gallery-card {
+    width: 250px !important;
+    margin-right: 0 !important;
+  }
+
+  .contact__main-inner-btn {
+    flex-direction: column !important;
+  }
+
+  .contact__btn {
+    margin-right: 0 !important;
+    margin-top: 14px !important;
+  }
+
   .footer__inner-btn {
     flex-direction: column !important;
   }
@@ -408,7 +421,6 @@ a {
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #f5f9fe;
   color: #0d1b48;
 }
 
@@ -549,205 +561,32 @@ a {
 }
 
 .home {
-  background-color: #f5f9fe;
-  padding-top: 100px;
-  padding-bottom: 70px;
-}
-
-.home__inner {
+  padding-top: 20px;
+  color: #0d1b48;
   padding-bottom: 60px;
 }
 
-.home__title {
-  margin-top: 0;
-  font-size: 47px;
-  text-align: center;
-  color: #0d1b48;
-}
-
-.home__title--sm {
-  margin-top: 0;
-  font-size: 35px;
-  margin-top: 40px;
-  text-align: center;
-  color: #0d1b48;
-  margin-bottom: 5px;
+.home__title-2 {
+  font-size: 30px;
+  display: inline-block;
 }
 
 .home__text {
-  font-size: 23px;
-  line-height: 1.8;
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-  color: #0d1b48;
-}
-
-.home__inner-card {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.home__card {
-  background-color: white;
-  padding: 25px;
-  border-radius: 6px;
-  margin-left: 35px;
-  margin-top: 80px;
-  max-width: 300px;
-  width: 100%;
-  color: #0d1b48;
-}
-
-.home__card-icon {
-  display: flex;
-  border-bottom: 1px solid gainsboro;
-}
-
-.home__card-icon-title {
-  font-size: 55px;
-  font-weight: 600;
-  margin: 0;
-}
-
-.home__card-icon-span {
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.home__card-icon-span--end {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.home__card-title {
-  margin-top: 5px;
-  font-size: 30px;
-  text-align: center;
-}
-
-.home__card-text {
+  font-size: 20px;
+  margin-top: 10px;
   margin-bottom: 30px;
-  line-height: 1.8;
 }
 
-.about {
-  margin-top: 80px;
-}
-
-.about__title {
-  font-size: 40px;
-  color: #0d1b48;
-  text-align: center;
-}
-
-.about__text {
-  font-size: 19px;
-  text-align: center;
-  margin-top: 0;
-}
-
-.about__inner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.about__card {
+.home__textarea {
+  background-color: #f5fef9;
   width: 100%;
-  max-width: 480px;
-  padding: 25px;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  border-radius: 6px;
+  height: 200px;
   border: 1px solid gainsboro;
-  border-radius: 6px;
-  margin-right: 30px;
-  display: flex;
-  align-items: flex-start;
-  margin-top: 30px;
-}
-
-.about__card-icon {
-  font-size: 35px;
-}
-
-.about__card-title {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.about__card-text {
-  font-size: 17px;
-  color: #4b4b4b;
-}
-
-.about__accordion {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding-bottom: 60px;
-}
-
-.about__accordion-inner-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  border: 2px solid gainsboro;
-  border-radius: 6px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  width: 90%;
-}
-
-.about__accordion-card {
-  width: 100%;
-  border-bottom: 1px solid gainsboro;
-}
-
-.about__accordion-card:hover {
-  background-color: #f5f9fe;
-}
-
-.about__accordion-card:hover .about__accordion-card-body {
-  display: block;
-}
-
-.about__accordion-card-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.about__accordion-card-title {
-  color: black;
-}
-
-.about__accordion-title {
-  text-align: center;
-  font-size: 40px;
-}
-
-.about__accordion-card-body {
-  display: none;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.about__accordion-text {
-  margin-bottom: 20px;
   font-size: 18px;
-}
-
-.text--lg {
-  font-size: 50px;
 }
 
 .about__footer {
@@ -840,7 +679,7 @@ a {
   display: flex;
 }
 
-.home__logo-sm {
+.home__logo--sm {
   max-width: 30px;
   margin-top: 80px;
 }
@@ -851,4 +690,4 @@ a {
   font-size: 16px;
 }
 
-/*# sourceMappingURL=pricing.css.map */
+/*# sourceMappingURL=submit.css.map */
