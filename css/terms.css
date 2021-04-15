@@ -136,7 +136,7 @@
 }
 
 .text-red {
-  color: #c33c54;
+  color: #c33c54 !important;
   margin-right: 8px;
 }
 

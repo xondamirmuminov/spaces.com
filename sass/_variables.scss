@@ -117,7 +117,7 @@ $d-red: #be2837;
     font-weight: 500;
 }
 .text-red {
-    color: $red;
+    color: $red !important;
     margin-right: 8px;
 }
 .text-green {
