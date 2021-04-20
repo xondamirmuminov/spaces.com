@@ -29,7 +29,32 @@
    
 }
 @media screen and(max-width:737px) {
-    // .home__block-inner-inp {
-    //     flex-direction: column;
-    // }
+    .home__block-inner-inp {
+         flex-direction: column;
+    }
+}
+@media screen and(max-width:616px) {
+    .footer__inner {
+        justify-content: center !important;
+    }
+    .footer__block {
+        max-width: 280px !important;
+        margin-right: 10px !important;
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .home__block--lg-inner,.home__block--lg-main {
+        padding: 25px !important;
+    }
+}    
+@media screen and(max-width:366px) {
+    .footer__inner-btn {
+        flex-direction: column !important;
+    }
+    .footer__btn {
+        width: 170px !important;
+    }
+    .contact__form-btn {
+        min-width: auto !important;
+    }
 }
