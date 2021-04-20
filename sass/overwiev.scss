@@ -1,5 +1,5 @@
 @import '_variables.scss';
-@import '_responsivet.scss';
+@import '_responsiveo.scss';
 @import '_loop.scss';
 
 *, *::after, *::before {
@@ -156,6 +156,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .home__block--sm {
     width: 100%;
@@ -166,6 +167,7 @@ a {
     border: 1px solid gainsboro;
     text-align: center;
     color: $blue;
+    margin-bottom: 40px;
 }
 .home__block-img {
     width: 100%;
@@ -194,6 +196,9 @@ a {
     display: flex;
     align-items: center;
     width: 100%;
+}
+.home__block--lg-title {
+    margin-top: 30px;
 }
 .home__block-card {
     background-color: white;
@@ -225,11 +230,23 @@ a {
 .home__block-card-text {
     font-size: 14px;
 }
-.home__block--lg-inner {
+.home__block--lg-inner,.home__block--lg-main {
     background-color: white;
     padding: 30px;
     border-radius: 8px;
+    color: $blue;
     border: 1px solid gainsboro;
+}
+.home__block-main-block {
+    padding: 15px;
+    border-top: 1px solid gainsboro;
+}
+.home__block-checkbox {
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.home__block--lg-main {
+    margin-top: 40px;
 }
 .home__block-inner-inp {
     display: flex;
@@ -239,16 +256,17 @@ a {
     font-size: 16px;
     color: $blue;
     font-weight: 600;
+    margin-top: 20px;
 }
 .home__block-inp {
     font-family: 'Poppins', sans-serif;
     display: inline-block;
     padding: 12px;
     border-radius: 6px;
-    width: 100%;
+    width: 92%;
     border: 1px solid gainsboro;
     font-size: 16px;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .footer {
     background-color: $blue;
