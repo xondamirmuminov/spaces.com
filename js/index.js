@@ -1,6 +1,9 @@
 var accordionBody = document.querySelectorAll(".about__accordion-body");
 var accordionInner = document.querySelector(".about__accordion");
 var accordionPlus = document.querySelector(".about__accordion-plus");
+var moreBody = document.querySelector('.home__block-card-header-block');
+var more = document.querySelector('.home__block-more');
+
 var acc = null;
 var acordion = false;
 
@@ -31,3 +34,15 @@ function accordion(el) {
 };
 
 document.querySelector('#email').disabled = true; 
+
+
+more = false;
+function moreButton() {
+    if(more == true) {
+        moreBody.classList.remove('home__block-card-header-block--active');
+        more = false;
+    }else {
+        moreBody.classList.add('home__block-card-header-block--active');
+        more = true;
+    }
+};

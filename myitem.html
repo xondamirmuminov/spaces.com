@@ -264,40 +264,276 @@
                 </div>
                 <div class="home__block--lg">
                     <button class="home__btn btn">+ Submit New Item</button>
-                    <div class="home__block--lg-card">
-                        <div>
-                            <img class="home__block-card-img" src="img/meeting-office.jpg" alt="">
-                        </div>
-                        <div>
-                            <p class="home__block-card-text"><i class="fas fa-medal text-blue mr-2"></i>Promoted until: 12 June</p>
-                            <a href="#">
-                                <h3 class="home__block-card-title">Collaborative Workspace</h3>
-                            </a>
-                            <div class="home__block-card-footer">
-                                <div class="d-flex mr-3">
-                                    <i class="fas fa-check-circle home__block-card-footer-icon mr-2 text-green"></i>
-                                    <p class="home__block-card-footer-text text-green">Active</p>
+                    <div class="home__block--lg-inner-card">
+                      <div class="home__block--lg-card">
+                          <div>
+                              <img class="home__block-card-img" src="img/meeting-office.jpg" alt="">
+                          </div>
+                          <div>
+                              <div class="w-100 home__block-card-header j-beetwen">
+                                  <p class="home__block-card-text"><i class="fas fa-medal text-blue mr-2"></i>Promoted until: 12 June</p>
+                                  <button onclick="moreButton()" type="button" class="home__block-more"><i class="fas fa-ellipsis-h"></i></button>
+                                  <div class="home__block-card-header-block">
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-edit"></i>
+                                      Edit Item
+                                    </div>
+                                    <div class="home__block-inner-icon text-red">
+                                      <i class="fas fa-trash"></i>
+                                      Disable
+                                    </div>
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-chart-line"></i>
+                                      Edit Item
+                                    </div>
+                                  </div>
+                              </div>
+                              <a href="#">
+                                  <h3 class="home__block-card-title">Collaborative Workspace</h3>
+                              </a>
+                              <div class="home__block-card-footer">
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-check-circle home__block-card-footer-icon mr-2 text-green"></i>
+                                      <p class="home__block-card-footer-text text-green">Active</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-eye home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">680</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="far fa-heart home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">10</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <a href="#">
+                                          <i class="fas fa-envelope home__block-card-footer-icon mr-2 text-blue"></i>
+                                      </a>
+                                      <p class="home__block-card-footer-text text-blue">80</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="home__block--lg-card">
+                          <div>
+                              <img class="home__block-card-img" src="img/meeting.jpg" alt="">
+                          </div>
+                          <div>
+                              <div class="w-100 home__block-card-header j-beetwen">
+                                  <p class="home__block-card-text"><i class="fas fa-medal text-blue mr-2"></i>Promoted until: 12 June</p>
+                                  <button onclick="moreButton()" type="button" class="home__block-more-two"><i class="fas fa-ellipsis-h"></i></button>
+                                  <div class="home__block-card-header-block-two">
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-edit"></i>
+                                      Edit Item
+                                    </div>
+                                    <div class="home__block-inner-icon text-red">
+                                      <i class="fas fa-trash"></i>
+                                      Disable
+                                    </div>
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-chart-line"></i>
+                                      Edit Item
+                                    </div>
+                                  </div>
+                              </div>
+                              <a href="#">
+                                  <h3 class="home__block-card-title">Meeting Workspace</h3>
+                              </a>
+                              <div class="home__block-card-footer">
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-times-circle home__block-card-footer-icon mr-2 text-red"></i>
+                                      <p class="home__block-card-footer-text text-red">Disabled</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-eye home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">3880</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="far fa-heart home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">30</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <a href="#">
+                                          <i class="fas fa-envelope home__block-card-footer-icon mr-2 text-blue"></i>
+                                      </a>
+                                      <p class="home__block-card-footer-text text-blue">80</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="home__block--lg-card">
+                          <div>
+                              <img class="home__block-card-img" src="img/private-office.jpg" alt="">
+                          </div>
+                          <div>
+                              <div class="w-100 home__block-card-header j-beetwen">
+                                  <p class="home__block-card-text"><i class="fas fa-medal text-blue mr-2"></i>Promoted until: 12 June</p>
+                                  <button onclick="moreButton()" type="button" class="home__block-more"><i class="fas fa-ellipsis-h"></i></button>
+                                  <div class="home__block-card-header-block">
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-edit"></i>
+                                      Edit Item
+                                    </div>
+                                    <div class="home__block-inner-icon text-red">
+                                      <i class="fas fa-trash"></i>
+                                      Disable
+                                    </div>
+                                    <div class="home__block-inner-icon">
+                                      <i class="fas fa-chart-line"></i>
+                                      Edit Item
+                                    </div>
+                                  </div>
+                              </div>
+                              <a href="#">
+                                  <h3 class="home__block-card-title">Pivate Workspace</h3>
+                              </a>
+                              <div class="home__block-card-footer">
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-times-circle home__block-card-footer-icon mr-2 text-red"></i>
+                                      <p class="home__block-card-footer-text text-red">Disabled</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="fas fa-eye home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">680</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <i class="far fa-heart home__block-card-footer-icon mr-2 text-blue"></i>
+                                      <p class="home__block-card-footer-text text-blue">10</p>
+                                  </div>
+                                  <div class="d-flex mr-3">
+                                      <a href="#">
+                                          <i class="fas fa-envelope home__block-card-footer-icon mr-2 text-blue"></i>
+                                      </a>
+                                      <p class="home__block-card-footer-text text-blue">8</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="home__block--lg-inner-card">
+                        <div class="home__block--lg-card">
+                            <div>
+                                <img class="home__block-card-img" src="img/meeting-office.jpg" alt="">
+                            </div>
+                            <div>
+                                <div class="w-100 home__block-card-header j-beetwen">
+                                    <p class="home__block-card-text"><i class="fas fa-medal text-blue mr-2"></i>Promoted until: 12 June</p>
+                                    <button onclick="moreButton()" type="button" class="home__block-more"><i class="fas fa-ellipsis-h"></i></button>
+                                    <div class="home__block-card-header-block">
+                                      <div class="home__block-inner-icon">
+                                        <i class="fas fa-edit"></i>
+                                        Edit Item
+                                      </div>
+                                      <div class="home__block-inner-icon text-red">
+                                        <i class="fas fa-trash"></i>
+                                        Disable
+                                      </div>
+                                      <div class="home__block-inner-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                        Edit Item
+                                      </div>
+                                    </div>
                                 </div>
-                                <div class="d-flex mr-3">
-                                    <i class="fas fa-eye home__block-card-footer-icon mr-2 text-blue"></i>
-                                    <p class="home__block-card-footer-text text-blue">680</p>
-                                </div>
-                                <div class="d-flex mr-3">
-                                    <i class="far fa-heart home__block-card-footer-icon mr-2 text-blue"></i>
-                                    <p class="home__block-card-footer-text text-blue">10</p>
-                                </div>
-                                <div class="d-flex mr-3">
-                                    <a href="#">
-                                        <i class="fas fa-envelope home__block-card-footer-icon mr-2 text-blue"></i>
-                                    </a>
-                                    <p class="home__block-card-footer-text text-blue">80</p>
+                                <a href="#">
+                                    <h3 class="home__block-card-title">Collaborative Workspace</h3>
+                                </a>
+                                <div class="home__block-card-footer">
+                                    <div class="d-flex mr-3">
+                                        <i class="fas fa-check-circle home__block-card-footer-icon mr-2 text-green"></i>
+                                        <p class="home__block-card-footer-text text-green">Active</p>
+                                    </div>
+                                    <div class="d-flex mr-3">
+                                        <i class="fas fa-eye home__block-card-footer-icon mr-2 text-blue"></i>
+                                        <p class="home__block-card-footer-text text-blue">680</p>
+                                    </div>
+                                    <div class="d-flex mr-3">
+                                        <i class="far fa-heart home__block-card-footer-icon mr-2 text-blue"></i>
+                                        <p class="home__block-card-footer-text text-blue">10</p>
+                                    </div>
+                                    <div class="d-flex mr-3">
+                                        <a href="#">
+                                            <i class="fas fa-envelope home__block-card-footer-icon mr-2 text-blue"></i>
+                                        </a>
+                                        <p class="home__block-card-footer-text text-blue">80</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                  </div>
+              </div>
           </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <img class="footer__logo" src="https://demo.themesberg.com/bootstrap/spaces/assets/img/brand/light.svg"
+              alt="">
+            <p class="footer__text">Premium Bootstrap Directory Listing Template</p>
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__block-title">@Xondamir Mo'minov</h3>
+            <ul class="footer__list">
+              <a class="footer__list-item" href="#">
+                Blog
+              </a>
+              <a class="footer__list-item" href="#">
+                Products
+              </a>
+              <a class="footer__list-item" href="#">
+                About Us
+              </a>
+              <a class="footer__list-item" href="#">
+                Contact Us
+              </a>
+            </ul>
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__block-title">Other</h3>
+            <ul class="footer__list">
+              <a class="footer__list-item" href="#">
+                Documentation
+              </a>
+              <a class="footer__list-item" href="#">
+                Changelog
+              </a>
+              <a class="footer__list-item" href="#">
+                Support
+              </a>
+              <a class="footer__list-item" href="#">
+                License
+              </a>
+            </ul>
+          </div>
+          <div class="footer__block col-3">
+            <h3 class="footer__block-title">Get the app</h3>
+            <p class="footer__block-text">It's easy. Just select your device.</p>
+            <div class="footer__inner-btn">
+              <button class="footer__btn btn">
+                <a class="footer__btn-link" href="#">
+                  <i class="fab fa-apple footer__btn-icon"></i>
+                  <div class="f-column">
+                    <span class="footer__btn-text--lg">App Store</span>
+                  </div>
+                </a>
+              </button>
+              <button class="footer__btn btn">
+                <a class="footer__btn-link" href="#">
+                  <i class="fab fa-google-play footer__btn-icon"></i>
+                  <div class="f-column">
+                    <span class="footer__btn-text--lg">Google Play</span>
+                  </div>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <img class="home__logo-sm" src="https://demo.themesberg.com/bootstrap/spaces/assets/img/themesberg.svg" alt="">
+          <a class="home__link d-block" href="#">A Xondamir Mo'minov production</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>      
